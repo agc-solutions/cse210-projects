@@ -101,9 +101,7 @@ class Program
         //    At this point, don't worry about the exceptional cases of A+, F+, or F-.
 
         int gradeSignal = number % 10;
-        //int y = int.Parse(gradeSignal);
-        //string signal = "";
-        Console.WriteLine(gradeSignal);
+        //Console.WriteLine(gradeSignal);
 
         string signal = "";
                       
