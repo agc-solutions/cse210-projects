@@ -11,8 +11,6 @@ class Program
         int squareNumber = SquareNumber(userNumber);
         DisplayResult(userName, squareNumber);
         
-
-
     }
 
     static void DisplayWelcome()
