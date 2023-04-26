@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-namespace array_sorting;
+
+
 
 
 class Program
@@ -42,7 +43,7 @@ class Program
                 numbers.Add(number);
             }
         }
-        // A test foreach
+        // A test
         // foreach (int num in numbers)
         // {
         // Console.WriteLine (num);
