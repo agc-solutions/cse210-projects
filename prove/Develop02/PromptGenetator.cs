@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 public class PromptGenerator
 {
     
@@ -10,15 +13,21 @@ public class PromptGenerator
         "Did I feel something today that I've never felt before?",
 
     };
-    // Declare a random
-    Random phrase = new Random();
-    //Do the random take a value inside of array by random gerated in index
-    int r = phrase.Next(prompts.Length);
-    //Now you can get your prompt
-    var sortedPrompt = ((string)prompts[r]);
+    
+    
+    
+   
+    
+    
     
     public void Display()
     {
+        // Declare a random
+        Random rnd = new Random();
+        //Make random take a value inside of array by the random generated in the index
+        int r = rnd.Next(prompts.Length);
+        //Now you can get your prompt
+        //var sortedPrompt = ((string)prompts[r]);
         Console.WriteLine(prompts[r]);
     }
     

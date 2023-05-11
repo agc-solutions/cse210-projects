@@ -95,9 +95,9 @@ class Program
                 
             }
 
-            if (number > 5)
+            if (number > 5 || number <= 0)
             {
-                Console.WriteLine("Just 1 to 5, please!");
+                Console.WriteLine("Please just 'numbers' between 1 and 5!");
             }
             
         } 
