@@ -35,10 +35,8 @@ public class Journal
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
             foreach (string line in _rndPpt._userThoughts)
-            //foreach (string entry in _rndPpt._userThoughts)
             {
-                //outputFile.WriteLine($"Date: {entry._date} - Prompt: {entry._chosenPrompt}\n {entry._reponse}")
-                //outputFile.WriteLine(line);
+                outputFile.WriteLine(line);
             }
         }
     } 

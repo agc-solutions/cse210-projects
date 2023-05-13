@@ -1,28 +1,20 @@
 public class Entry
 {
     public static PromptGenerator _pptG = new PromptGenerator();
-    //public List<string> _ppts = new List<string>;
     public List<string> _userThoughts = new List<string>();
     string _userThought;
-    public string _chosenPrompt;
-    public string _date;
-    public string _reponse;
+       
     public void teste()
     {
         string response = "";
-        // PromptGenerator myPromptGenerator = new PromptGenerator();
         _pptG.PromptGen();
         response = Console.ReadLine();
-
-        
+                
         DateTime theCurrentTime = DateTime.Now;
         string date = theCurrentTime.ToShortDateString();
-        int NewLine = _userThoughts.Count +1;
-        
-        Console.WriteLine(_chosenPrompt);
+        int NewLine = _userThoughts.Count +1;       
 
-                
-        _userThought = ($" Date: {date} - Prompt: {_chosenPrompt} \n{response} ");
+        _userThought = ($" Date: {date} - Prompt: {_pptG._chosen} \n{response} ");
         StoreThoughts(_userThought);
     }
 
