@@ -26,16 +26,8 @@ public class PromptGenerator
         
         //var chosenPrompt = ((string)prompts[r]);
         //Console.WriteLine(prompts[r]);
-        //Console.WriteLine(chosenPrompt);
+        Console.WriteLine(chosenPrompt);
        
-        // string str = $"{ppt}";
-        // Console.WriteLine(str)
-        //public List<Entry> _entries = new List<Entry>();
-              
-            // Entry entry = new Entry();
-            // entry._chosenPrompt = chosenPrompt;
-            Console.WriteLine(chosenPrompt);
-
     }   
  
        

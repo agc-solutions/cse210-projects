@@ -18,13 +18,7 @@ public class Entry
         DateTime theCurrentTime = DateTime.Now;
         string date = theCurrentTime.ToShortDateString();
         int NewLine = _userThoughts.Count +1;
-
-
-        // Entry entry = new Entry();
-        // entry._dateTime = date;
-        // entry._chosenPrompt = _chosenPrompt;
-        // entry._message = response;
-        // _entries.Add(entry);
+        
         Console.WriteLine(_chosenPrompt);
 
                 
