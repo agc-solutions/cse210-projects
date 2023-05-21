@@ -19,5 +19,36 @@ class Program
         Fraction f4 = new Fraction(1,3);
         Console.WriteLine(f4.GetFractionString());
         Console.WriteLine(f4.GetDecimalValue());
+
+
+        // //Another way to do this assignment
+        // fraction output = new Fraction();
+        // output.Top=1;
+        // Console.Write(output.GetFractionString());
+        // Console.Write("\n");
+        // Console.Write(output.getDecimal());
+        // Console.Write("\n");
+
+        // output.Top = 5
+        // Console.Write(output.GetFractionString());
+        // Console.Write("\n");
+        // Console.Write(output.getDecimal());
+        // Console.Write("\n");
+
+        // output.Top = 3;
+        // output.Bottom = 4;
+        // Console.Write(output.GetFractionString());
+        // Console.Write("\n");
+        // Console.Write(output.getDecimal());
+        // Console.Write("\n");
+
+        // output.Top = 1;
+        // output.Bottom = 3;
+        // Console.Write(output.GetFractionString());
+        // Console.Write("\n");
+        // Console.Write(output.getDecimal());
+        // Console.Write("\n");
+
     }
 }
+
