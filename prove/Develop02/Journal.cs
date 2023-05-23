@@ -1,9 +1,12 @@
 public class Journal
 {
     public static Entry _rndPpt = new Entry();
-    string _userChoice;
-    string _csv;
-    string _txt;
+    public List<string> _userThoughts = new List<string>();
+    //List<string> lista = _lista._userThoughts;
+    //string _userChoice;
+    //string _csv;
+    //string _txt;
+       
     public void DisplayPrompt()
     {
         _rndPpt.teste();
@@ -11,6 +14,8 @@ public class Journal
     public void DisplayEntries()
     {
         foreach(string line in _rndPpt._userThoughts)
+        //foreach(string line in _userThoughts)
+        
         {
             Console.WriteLine(line);
         }
@@ -24,6 +29,7 @@ public class Journal
         foreach(string line in lines)
         {
             _rndPpt._userThoughts.Add(line);
+            //_userThoughts.Add(line);
         }         
     }
     
@@ -35,6 +41,7 @@ public class Journal
         using (StreamWriter outputFile = new StreamWriter(filename))
         {
             foreach (string line in _rndPpt._userThoughts)
+            //foreach (string line in _userThoughts)
             {
                 outputFile.WriteLine(line);
             }

@@ -11,8 +11,8 @@ class Program
         Console.WriteLine("Welcome to the Journal Program!");
         Console.WriteLine("Please select one of the following choices:\n1. Write\n2. Display\n3. Load\n4. Save\n5. Quit ");
     
-       List<string> personalPrompts;
-       personalPrompts = new List<string>();
+    //    List<string> personalPrompts;
+    //    personalPrompts = new List<string>();
         //int x;
             //while (!int.TryParse(Console.ReadLine(), out x))
             //{
