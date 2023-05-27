@@ -2,7 +2,7 @@ public class Entry
 {
     public static PromptGenerator _pptG = new PromptGenerator();
     public static Journal _abc = new Journal();
-    List<string> lista = _abc._userThoughts;
+    //List<string> lista = _abc._userThoughts;
     public List<string> _userThoughts = new List<string>();
     string _userThought;
        
@@ -20,13 +20,13 @@ public class Entry
 
         _userThought = ($" Date: {date} - Prompt: {_pptG._chosen} \n{response} ");
         StoreThoughts(_userThought);
-    }
-
+    }    
     public void StoreThoughts(string _userThought)
+    
     {
-        _userThoughts.Add(_userThought);
+       _userThoughts.Add(_userThought);
         // lista.Add(_userThought);
-        // abc._userThoughts.Add(_userThought);
+        //_abc._userThoughts.Add(_userThought);
     }
         
     // public void ReadFromFile()

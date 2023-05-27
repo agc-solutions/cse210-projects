@@ -2,11 +2,17 @@ using System;
 
 class Program
 {
-    public static Scripture _userChoice = new Scripture();
-    public static Reference _ref = new Reference();
-        
     static void Main(string[] args)
     {
+        
+        //public static Reference _ref = new Reference(); 
+        References refes = new References();
+        refes._book = "Alma";
+        refes._chapter = 37;
+        refes._verse = 37;
+
+        public Scripture _userChoice = new Scripture();
+
         Console.WriteLine();
         Console.WriteLine("Welcome to the Scripture Memorizer Program!");
         
@@ -20,13 +26,11 @@ class Program
             {
                 //break;
                 Console.Clear();
+                refes.References();
                 _userChoice.scrptr();
             }
             
             Console.WriteLine("Bye, see you later.");
-            
-
-        
-        
+              
     }
 }

@@ -1,6 +1,11 @@
 using System;
 public class Scripture 
 {
+    // public string References refes = new References();
+    // refes._book = "Alma";
+    // refes._chapter = 37;
+    // refes._verse = 37;
+
     //public static Scripture _userChoice = new Scripture();
     //private _scripture;
     private int _reference;
@@ -13,7 +18,7 @@ public class Scripture
         Random rnd = new Random();
         for (int i = 0; i < words.Length; i++)
         {
-            if (rnd.Next(3) == 0) 
+            if (rnd.Next(2) == 0) 
             
             {
                 words[i] = new string('_', words[i].Length); //replace words with underscores
