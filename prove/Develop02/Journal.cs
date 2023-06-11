@@ -8,6 +8,10 @@ public class Journal
     //string _userChoice;
     //string _csv;
     //string _txt;
+    public string _userThought;
+    //StoreThoughts(_userThought);
+
+    
     
     public void DisplayPrompt()
     {
@@ -49,4 +53,11 @@ public class Journal
             }
         }
     } 
+
+    // public void StoreThoughts(string _userThought)
+    
+    // {
+    //    _userThoughts.Add(_userThought);
+       
+    //}
 }

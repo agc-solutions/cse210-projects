@@ -3,7 +3,7 @@ public class Entry
     public static PromptGenerator _pptG = new PromptGenerator();
     public static Journal _abc = new Journal();
     //List<string> lista = _abc._userThoughts;
-    public List<string> _userThoughts = new List<string>();
+    public List<string> _userThoughts = new List<string>(); 
     string _userThought;
        
     public void teste()
@@ -14,12 +14,16 @@ public class Entry
                 
         DateTime theCurrentTime = DateTime.Now;
         string date = theCurrentTime.ToShortDateString();
-        int NewLine = _userThoughts.Count +1; 
+        int NewLine = _userThoughts.Count +1;
+        //int NewLine = _abc._userThoughts.Count +1; 
         //int NewLine = lista.Count +1;
-        //int NewLine = _abc._userThoughts.Count +1;   
+        
 
         _userThought = ($" Date: {date} - Prompt: {_pptG._chosen} \n{response} ");
-        StoreThoughts(_userThought);
+        StoreThoughts(_userThought);   
+
+        // _abc._userThought = ($" Date: {date} - Prompt: {_pptG._chosen} \n{response} ");
+        // _abc.StoreThoughts(_userThought);
     }    
     public void StoreThoughts(string _userThought)
     
