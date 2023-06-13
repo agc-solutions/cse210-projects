@@ -1,14 +1,14 @@
 public class Journal
 {
     public static Entry _rndPpt = new Entry();
-    public List<string> _userThoughts = new List<string>();
+    //public List<string> _userThoughts = new List<string>();
     //public List<string> _rndPpt.StoreThoughts = new List<string>();
     //List<string> lista = _lista._userThoughts;
     //public list <string> _userThoughts = _rndPpt.StoreThoughts
     //string _userChoice;
     //string _csv;
     //string _txt;
-    public string _userThought;
+    //public string _userThought;
     //StoreThoughts(_userThought);
 
     

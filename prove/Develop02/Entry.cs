@@ -1,7 +1,7 @@
 public class Entry
 {
     public static PromptGenerator _pptG = new PromptGenerator();
-    public static Journal _abc = new Journal();
+    //public static Journal _abc = new Journal();
     //List<string> lista = _abc._userThoughts;
     public List<string> _userThoughts = new List<string>(); 
     string _userThought;

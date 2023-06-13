@@ -6,7 +6,7 @@ public class Book {
 public class Chapter {
     public List<string> Verses {get; set; } = new List<string>();
 }
-// private string[] livros
+private string[] livros
 // {
     
 //         // "bookName" =  "John";
