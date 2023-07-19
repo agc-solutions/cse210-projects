@@ -1,32 +1,43 @@
-public class Journal
-{
-    public static Entry _rndPpt = new Entry();
-    //public List<string> _userThoughts = new List<string>();
-    //public List<string> _rndPpt.StoreThoughts = new List<string>();
-    //List<string> lista = _lista._userThoughts;
-    //public list <string> _userThoughts = _rndPpt.StoreThoughts
-    //string _userChoice;
-    //string _csv;
-    //string _txt;
-    //public string _userThought;
-    //StoreThoughts(_userThought);
+using System;
+using System.IO;
+using System.Collections.Generic;
 
-    
-    
-    public void DisplayPrompt()
+public class Journal
+{   
+   public static PromptGenerator _pptG = new PromptGenerator();
+   public static Entry entry1 = new Entry();
+   string date = DateTime.Now.ToShortDateString();
+   public List<Entry> entries = new List<Entry>();
+
+   public void NewEntry(string prompt)
+   {
+    Console.WriteLine(prompt);
+    string response = Console.ReadLine();
+    Entry entry = new Entry { _prompt = prompt, _response = response, _date = date};
+    entries.Add(entry);
+   }
+
+   public void DisplayPrompt()
+   {
+    _pptG.PromptGen();
+    string response = "";    
+    response = Console.ReadLine();
+    //      OR
+    // string response = Console.ReadLine();
+    Entry entry = new Entry { _prompt = _pptG._chosen, _response = response, _date = date};
+    entries.Add(entry);
+   }
+   public void DisplayEntries()
+   {
+    foreach (Entry entry in entries)
     {
-        _rndPpt.teste();
+        Console.WriteLine($"Date: {entry._date}");
+        Console.WriteLine($"Prompt: {entry._prompt}");
+        Console.WriteLine($"Response: {entry._response}");
+        Console.WriteLine();        
     }
-    public void DisplayEntries()
-    {
-        foreach(string line in _rndPpt._userThoughts)
-        //foreach(string line in _userThoughts)
-        
-        {
-            Console.WriteLine(line);
-        }
-    }
-    public void LoadFromFile()
+   }  
+   public void LoadFromFile()
     {       
         Console.WriteLine("Type your filename: ");
         string _txt = Console.ReadLine();
@@ -34,30 +45,20 @@ public class Journal
         string[] lines = content.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
         foreach(string line in lines)
         {
-            _rndPpt._userThoughts.Add(line);
-            //_userThoughts.Add(line);
+            Console.WriteLine(line);
         }         
     }
-    
-    public void SaveToFile()
+   public void SaveToFile()
     {
         Console.WriteLine("Type your file name: ");
 
         string filename = Console.ReadLine();
         using (StreamWriter outputFile = new StreamWriter(filename))
-        {
-            foreach (string line in _rndPpt._userThoughts)
-            //foreach (string line in _userThoughts)
+        {            
+            foreach (Entry entry in entries)
             {
-                outputFile.WriteLine(line);
+                outputFile.WriteLine($"Date: {entry._date} - Prompt: {entry._prompt} \n {entry._response}");
             }
         }
     } 
-
-    // public void StoreThoughts(string _userThought)
-    
-    // {
-    //    _userThoughts.Add(_userThought);
-       
-    //}
 }

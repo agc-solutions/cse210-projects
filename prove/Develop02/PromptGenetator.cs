@@ -1,7 +1,5 @@
 public class PromptGenerator
 {
-    //public List<string> _Prompts = new List<string>();
-    //public string chosenPrompt;
     public string _chosen;
     public void PromptGen()
     {
@@ -24,9 +22,5 @@ public class PromptGenerator
         //var chosenPrompt = ((string)prompts[r]);
         //Console.WriteLine(prompts[r]);
         Console.WriteLine(chosenPrompt);
-    }   
-    // public void StorePrompts(string _chosen)
-    // {
-    //     _Prompts.Add(_chosen);
-    // }
+    }       
 }
