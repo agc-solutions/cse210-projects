@@ -4,7 +4,7 @@ public class PromptGenerator
     public void PromptGen()
     {
         string[] prompts = {
-            "What was the best part is my day?",
+            "What was the best part of my day?",
             "How did I see the hand of the Lord in my life today?",
             "Did I do something nice for someone today?",
             "Did I do something today that I keep doing?",
